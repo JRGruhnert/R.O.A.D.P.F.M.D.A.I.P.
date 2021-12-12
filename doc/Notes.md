@@ -59,7 +59,7 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
 
 ## <u>28.11.2021</u>
 - Aufspielen von Raspbian OS Lite auf SD-Karte (Headless OS)
-- SSH und WIFI aktivieren.  Beispiel: [Hier](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
+- SSH und WIFI aktivieren.  Beispiel: [Hier](https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup)
 - Steuern von RPI über PC
 - Installieren von Mosquitto, InfluxDB und Grafana
 - InfluxDB Tabelle über Cmd erstellen
