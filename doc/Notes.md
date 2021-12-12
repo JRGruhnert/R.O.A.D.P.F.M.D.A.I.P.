@@ -130,6 +130,7 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
     - Active Noisecancelling Prinzip.
     - Abweichung ist Label.
     - Vergleichen von Messungen mit gleicher Vorraussetzung.
+    - [Conceptboard](https://app.conceptboard.com/board/gto3-21dt-n0mk-k9sa-xukq)
 
 
   - ***Abgeleitete Aufgaben:***
