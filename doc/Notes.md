@@ -1,11 +1,11 @@
 # **Notizen** (German)
 Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden musste.
 
-## <span style="color:#9ACD32"><u>16.11.2021</u></span>
-- ### <span style="color:#A52A2A">**Meeting (online)**</span>
-  - <span style="color:#40a6a3">***Notizen:***</span>
+## <u>16.11.2021</u>
+- ### **Meeting (online)**
+  - ***Notizen:***
     Datenpipeline verstehen. Was wird gebraucht
-  - <span style="color:#40a6a3">***Abgeleitete Aufgaben:***</span>
+  - ***Abgeleitete Aufgaben:***
     - [x] ESP32 nachricht an RPI senden, mit MQTT Protokoll
     - [x] Recherche IOT Protokolle
     - [x] Recherche Datenbanken
@@ -13,43 +13,43 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
     - [x] Recherche Machine Learning (ML-Arten, oberflächlich)
 
 
-## <span style="color:#9ACD32"><u>19.11.2021</u></span>
+## <u>19.11.2021</u>
 - ESP32 nachricht an RPI gesendet
 
 
-## <span style="color:#9ACD32"><u>20.11.2021</u></span>
+## <u>20.11.2021</u>
 - Recherche IOT Protokolle
 - Recherche Datenbanken
 
 
-## <span style="color:#9ACD32"><u>21.11.2021</u></span>
+## <u>21.11.2021</u>
 - Recherche CRISP DM und Alternativen
 
 
-## <span style="color:#9ACD32"><u>22.11.2021</u></span>
+## <u>22.11.2021</u>
 - Recherche Machine Learning (ML-Arten, oberflächlich)
 
 
-## <span style="color:#9ACD32"><u>23.11.2021</u></span>
-- ### <span style="color:#A52A2A">**Meeting (am Fraunhofer Vaihingen)**</span>
-  - <span style="color:#40a6a3">***Notizen:***</span>
+## <u>23.11.2021</u>
+- ### **Meeting (am Fraunhofer Vaihingen)**
+  - ***Notizen:***
     - Prüfungsamt, Abtretungserklärung, Informatik Seite Prüfer, Bfs, Lean Startup (weitere Variante)
-  - <span style="color:#40a6a3">***Abgeleitete Aufgaben:***</span>
+  - ***Abgeleitete Aufgaben:***
     - [x] Datenpipeline aufbauen
     - [x] Verstehen des Aufbaus
     - [x] Monitoring mit Grafana
 
 
-## <span style="color:#9ACD32"><u>25.11.2021</u></span>
+## <u>25.11.2021</u>
 - Durchlesen von Dev-Tutorials über MQTT auf dem ESP32 und RPI
 - Email Impuls: Welche Versionierung für Software und Datenvarianz erhöhen.
 
 
-## <span style="color:#9ACD32"><u>26.11.2021</u></span>
+## <u>26.11.2021</u>
 - Anschließen vom BME680 Sensor an den ESP32 [mit Tutorial](https://randomnerdtutorials.com/esp32-bme680-sensor-arduino/) (SPI Anschluss)
   
 
-## <span style="color:#9ACD32"><u>27.11.2021</u></span>
+## <u>27.11.2021</u>
 - Schreiben des ESP32 Programms. Hilfreiche Quellen: 
   [Sensoren/Library Setup](https://randomnerdtutorials.com/esp32-bme680-sensor-arduino/), 
   [Bosch Github](https://github.com/BoschSensortec/BSEC-Arduino-library), 
@@ -57,7 +57,7 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
 - Nutze die Arduino Library von Bosch. Setup der Library hat sehr lange gebraucht, da es sich um eine static-Library handelt und in den esp32 Arduino files, bestimmte Konfigurationen angepasst werden mussten. Steht ungefähr im Bosch Github.
 
 
-## <span style="color:#9ACD32"><u>28.11.2021</u></span>
+## <u>28.11.2021</u>
 - Aufspielen von Raspbian OS Lite auf SD-Karte (Headless OS)
 - SSH und WIFI aktivieren.  Beispiel: [Hier](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
 - Steuern von RPI über PC
@@ -70,14 +70,14 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
 - Manuelles ausführen des Scripts funktioniert aber.
 
 
-## <span style="color:#9ACD32"><u>29.11.2021</u></span>
+## <u>29.11.2021</u>
 - **Bug Fixing:** Das Python Script startet nun automatisch, nachdem der rpi an geht. Dafür habe ich einen Service geschrieben, der nach erfolgreichem Systemstart ausgeführt wird. Nämlich erst nachdem alle Systemprozesse laufen. [Guide](https://www.raspberrypi-spy.co.uk/2015/10/how-to-autorun-a-python-script-on-boot-using-systemd/)
 - Der Vollständigkeitshalber wird Grafana Server nun auch voll automatisch ausgefürt.
 
 
-## <span style="color:#9ACD32"><u>30.11.2021</u></span>
-- ### <span style="color:#A52A2A">**Meeting (online)**</span>
-  - <span style="color:#40a6a3">***Notizen:***</span>
+## <u>30.11.2021</u>
+- ### **Meeting (online)**
+  - ***Notizen:***
     - UML-Dokument für Visualisierung
     - GitHub
     - Deskriptive Statistik
@@ -88,18 +88,65 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
     - Zeitreihendatenanalyse
     - Jupiter Notebook
     - Wie zieht man die Daten aus der Datenbank?
-  - <span style="color:#40a6a3">***Abgeleitete Aufgaben:***</span>
+  - ***Abgeleitete Aufgaben:***
     - [x] UML-Diagramm über Datenpipeline erstellen
     - [x] GitHub anlegen
     - [x] Recherche Deskriptive Statistik
     - [ ] Recherche Jupiter Notebook
-    - [ ] Recherche Zeitreihendatenanalyse
+    - [x] Recherche Zeitreihendatenanalyse
     - [ ] \(Optional) Json anstatt Strings zum übermitteln
 
 
-## <span style="color:#9ACD32"><u>2.12.2021</u></span>
+## <u>2.12.2021</u>
 - Recherche Deskriptive Statistik
+- UML-Diagramm erstellt
   
 
-## <span style="color:#9ACD32"><u>3.12.2021</u></span>
+## <u>3.12.2021</u>
 - Anlegen von Github Repo und digitalisierung der Notes
+
+
+## <u>4.12.2021</u>
+- JSON Format ausprobieren
+- läuft nicht, da Probleme mit der Datenbank und dem abspeichern
+- Das genaue Abspeichern von Daten und die Struktur der Daten muss ich nochmal genau nachholen.
+
+
+## <u>5.12.2021</u>
+- Recherche zu Zeitreihendatenanalyse. 
+
+
+## <u>7.12.2021</u>
+- ### **Meeting (online)**
+  - ***Notizen:***
+    - Prüfer finden, der mit dem Thema zutun hat.
+    - Anderer Prüfe ist Professor Ridel.
+    - Mehrere Prüfer, nur Unterschrift.
+    - Frau Dr. Katrin Schneider.
+    - Was braucht sie von uns?
+    - Jupyter Notebook Visualisierungen mit InfluxDB.
+    - Wie visualisiert man eine Zeitreihe?
+    - TIG-Stack.
+    - Active Noisecancelling Prinzip.
+    - Abweichung ist Label.
+    - Vergleichen von Messungen mit gleicher Vorraussetzung.
+
+
+  - ***Abgeleitete Aufgaben:***
+    - [ ] Visualisierung von Sensordaten in Jupyter Notebook.
+    - [x] Bacheloranmeldung abklären.
+    - [ ] TIG angucken. Was ist das genau?
+
+
+## <u>8.12.2021</u>
+- Jupiter Notebook oberflächlich angeguckt. Soll angeblich sehr verbreitet für ML-Programmierung sein.
+
+## <u>10.12.2021</u>
+- Studiengangsorganisation telefonisch erreicht -> Es darf offiziell nur einen Prüfer geben und dieser muss ein Informatik-Prof sein.
+- BFS erreicht. Vom IAT geht es in Ordnung, wenn es nur einen Prüfer gibt und dieser aus Fakultät 5 kommt.
+- -> Übers Wochenende Prüfer raussuchen und am Montag kontaktieren.
+
+## <u>11.12.2021</u>
+- Anaconda und Tensorflow runtergeladen.
+- Jupiter Notebook gestartet und mit Funktionen vertraut gemacht und eingerichtet.
+
