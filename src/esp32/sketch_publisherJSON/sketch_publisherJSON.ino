@@ -1,7 +1,7 @@
-#include <ArduinoJson.h>;
 #include "PubSubClient.h"; 
 #include "WiFi.h"; 
 #include "bsec.h";
+#include "time.h";
 
 // WiFi
 const char* ssid = "ssid_here";
@@ -14,7 +14,6 @@ const char* location = "bedroom";
 const char* mqtt_username = "mqtt_username_here";
 const char* mqtt_password = "mqtt_password_here";
 const char* clientID = "client_bedroom"; // MQTT client ID
-
 
 //Instances of included librarys
 WiFiClient wifiClient;
@@ -53,7 +52,9 @@ void loop() {
     checkSensorStatus();
   }
 
-  send_JSON_message(humidity, temperature, pressure, gas);
+  unsigned int timestamp = getTime();
+
+  send_JSON_message(humidity, temperature, pressure, gas, timestamp);
 
   delay(1000);   // print new values every 1 sec
 }
@@ -127,28 +128,33 @@ void checkSensorStatus()
   }
 }
 
-void send_JSON_message(float humidity, float temperature, float pressure, float gas) {
+void send_JSON_message(float humidity, float temperature, float pressure, float gas, unsigned int timestamp) {
 
-  //create json
-  StaticJsonDocument<256> data;
-  JsonObject root = data.to<JsonObject>();
-  root["location"] = location;
-  JsonObject measurements = root.createNestedObject("measurements");
-  measurements["humidity"] = humidity;
-  measurements["temperature"] = temperature;
-  measurements["pressure"] = pressure;
-  measurements["gas"] = gas;
-
-  //serialize json
-  char buffer[256];
-  size_t bufferSize = serializeJson(data, buffer);
+  // Create the message that will be send using mqtt
+  String message = "SensorData,location=" + String(location) +" humidity=" + String(humidity) 
+  + ",temperature=" + String(temperature) 
+  + ",pressure=" + String(pressure) 
+  + ",gas=" + String(gas)
+  + " " + String(timestamp);
 
   //send to server
-   while(!client.publish(topic, buffer, bufferSize)) {
-    Serial.println("Pressure failed to send. Trying again...");
+   while(!client.publish(topic, message.c_str())) {
+    Serial.println("Measurments failed to send. Trying again...");
     connect_MQTT();
     delay(10);
   }
   Serial.println("Measurements sent!");
   
+}
+
+// Function that gets current epoch time
+unsigned int getTime() {
+  time_t now;
+  struct tm timeinfo;
+  if (!getLocalTime(&timeinfo)) {
+    //Serial.println("Failed to obtain time");
+    return(0);
+  }
+  time(&now);
+  return now;
 }

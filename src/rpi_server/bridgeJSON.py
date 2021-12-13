@@ -26,10 +26,10 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     data = msg.payload.decode('utf8').replace("'", '"')
-    pyData = json.loads(data)
-    jsonData = json.dumps(pyData)
-    if jsonData is not None:
-        influxdb_client.write_points(jsonData)
+    pyData = json.load(data)
+
+    if pyData is not None:
+        influxdb_client.write_points(pyData)
 
 def _init_influxdb_database():
     databases = influxdb_client.get_list_database()
@@ -51,4 +51,4 @@ def main():
 
 if __name__ == '__main__':
     print('bridge running...')
-    main()()
+    main()
