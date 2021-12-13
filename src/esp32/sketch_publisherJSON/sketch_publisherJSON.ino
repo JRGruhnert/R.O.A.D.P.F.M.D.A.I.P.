@@ -134,8 +134,8 @@ void send_JSON_message(float humidity, float temperature, float pressure, float 
   String message = "SensorData,location=" + String(location) +" humidity=" + String(humidity) 
   + ",temperature=" + String(temperature) 
   + ",pressure=" + String(pressure) 
-  + ",gas=" + String(gas)
-  + " " + String(timestamp);
+  + ",gas=" + String(gas);
+  //+ " " + String(timestamp);
 
   //send to server
    while(!client.publish(topic, message.c_str())) {
@@ -143,18 +143,13 @@ void send_JSON_message(float humidity, float temperature, float pressure, float 
     connect_MQTT();
     delay(10);
   }
+  Serial.println(message.c_str());
   Serial.println("Measurements sent!");
   
 }
 
 // Function that gets current epoch time
+// TODO: I want to do it here but arduino only supports a local clock.
 unsigned int getTime() {
-  time_t now;
-  struct tm timeinfo;
-  if (!getLocalTime(&timeinfo)) {
-    //Serial.println("Failed to obtain time");
-    return(0);
-  }
-  time(&now);
-  return now;
+  return (unsigned int) time(NULL);
 }
