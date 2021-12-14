@@ -92,9 +92,9 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
     - [x] UML-Diagramm über Datenpipeline erstellen
     - [x] GitHub anlegen
     - [x] Recherche Deskriptive Statistik
-    - [ ] Recherche Jupiter Notebook
+    - [x] Recherche Jupiter Notebook
     - [x] Recherche Zeitreihendatenanalyse
-    - [ ] \(Optional) Json anstatt Strings zum übermitteln
+    - [x] \(Optional) Json anstatt Strings zum übermitteln
 
 
 ## <u>2.12.2021</u>
@@ -134,9 +134,9 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
 
 
   - ***Abgeleitete Aufgaben:***
-    - [ ] Visualisierung von Sensordaten in Jupyter Notebook.
+    - [x] Visualisierung von Sensordaten in Jupyter Notebook.
     - [x] Bacheloranmeldung abklären.
-    - [ ] TIG angucken. Was ist das genau?
+    - [x] TIG angucken. Was ist das genau?
 
 
 ## <u>8.12.2021</u>
