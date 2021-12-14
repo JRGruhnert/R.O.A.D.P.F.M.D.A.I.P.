@@ -150,4 +150,10 @@ Beginn der Aufzeichnungen ab dem 16.11.2021, da davor nichts notiert werden muss
 ## <u>11.12.2021</u>
 - Anaconda und Tensorflow runtergeladen.
 - Jupiter Notebook gestartet und mit Funktionen vertraut gemacht und eingerichtet.
+  
+## <u>12.12.2021</u>
+- TIG Stack eingerichtet
+
+## <u>13.12.2021</u>
+- Jupiter Notebook Daten visualisiert
 
