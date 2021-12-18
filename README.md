@@ -1,4 +1,4 @@
-# Realization of a data pipeline for machine data acquisition in production (R_O_A_D_P_F_M_D_A_I_P)
+# Realization of a data pipeline for machine data acquisition in production
 ## Setup
 Used Hardware and Software
 ### Hardware
