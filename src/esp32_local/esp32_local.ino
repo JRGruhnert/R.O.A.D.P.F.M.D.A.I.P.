@@ -56,6 +56,11 @@ void loop() {
     checkSensorStatus();
   }
 
+  Serial.println("Temperature: " + String(temperature));
+  Serial.println("Humidity: " + String(humidity));
+  Serial.println("Gas: " + String(gas));
+  Serial.println("Pressure: " + String(pressure));
+
 /*
 
   while(!client.publish(temperature_topic, String(temperature).c_str())) {
