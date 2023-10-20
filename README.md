@@ -1,4 +1,5 @@
 # Realization of a data pipeline for machine data acquisition in production
+Includes python and arduino files to visualize sensor data. The collected data 
 ## Setup
 Used Hardware and Software
 ### Hardware
@@ -10,10 +11,9 @@ Used Hardware and Software
 - Grafana
 - InfluxDB
 - Jupiter Notebook
-- Mosq
+- Mosquitto (MQTT)
 ### Programming Languages
 - C++ (Arduino Dialect)
-- Python 3
-- 
+- Python
 ## Sequenzdiagramm
 ![image](/doc/images/UML_Sensor.png)
