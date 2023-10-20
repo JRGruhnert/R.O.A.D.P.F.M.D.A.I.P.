@@ -1,5 +1,6 @@
 # Realization of a data pipeline for machine data acquisition in production
-Includes python and arduino files used to visualize sensor data. The collected data gets publised via the MQTT protocol. The server runs a python script that subscribes as client to the MQTT instance. The data gets written to a local InfluxDB database. A Grafana instance is used to visualize the data over time by regulary pulling from the InfluxDB database.
+Includes python and arduino files used to visualize sensor data. The collected data gets publised via the MQTT protocol. The server runs bridge.py which subscribes to the MQTT instance. The data gets written to a local InfluxDB database. A Grafana instance is used to visualize the data over time by regulary pulling from the InfluxDB database. The setup of the InfluxDB and Grafana instance is not part of this repo. It is important to give a static ip to the raspberry pi.
+
 ## Setup
 Used Hardware and Software
 ### Hardware
