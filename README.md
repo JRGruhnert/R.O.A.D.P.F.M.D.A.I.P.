@@ -14,7 +14,7 @@ Used Hardware and Software
 - Jupiter Notebook
 - Mosquitto (MQTT)
 ### Programming Languages
-- C++ (Arduino Dialect)
+- C++ (Arduino dialect)
 - Python
 ## Sequenzdiagramm
 ![image](/doc/images/UML_Sensor.png)
