@@ -4,18 +4,17 @@ from typing import NamedTuple
 import paho.mqtt.client as mqtt
 from influxdb import InfluxDBClient
 
-ADDRESS = '192.168.0.152'
-
-
+# TODO CHANGE THE VARIABLES WITH UR SETTINGS
+ADDRESS = 'IP address'
 INFLUXDB_USER = 'influxdb_user'
 INFLUXDB_PASSWORD = 'influxdb_password'
 INFLUXDB_DATABASE = 'sensor_stations'
-
 MQTT_USER = 'mqtt_user'
 MQTT_PASSWORD = 'mqtt_password'
 MQTT_TOPIC = 'home/+/+'
 MQTT_REGEX = 'home/([^/]+)/([^/]+)' #regex matching durch json ersetzen
 MQTT_CLIENT_ID = 'mqtt_client_id'
+
 
 influxdb_client = InfluxDBClient(ADDRESS, 8086, INFLUXDB_USER, INFLUXDB_PASSWORD, None)
 
