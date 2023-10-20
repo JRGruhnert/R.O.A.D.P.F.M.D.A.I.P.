@@ -6,12 +6,11 @@ Used Hardware and Software
 - Raspberry Pi
 - BME680
 - (cables)
-### Technologies
+### Software / Libraries
 - Grafana
 - InfluxDB
-- ArduinoIDE
-- PyCharm
 - Jupiter Notebook
+- Mosq
 ### Programming Languages
 - C++ (Arduino Dialect)
 - Python 3
