@@ -3,12 +3,13 @@
 #include "bsec.h";
 #include "time.h";
 
+//TODO CHANGE VARIABLES WITH YOUR ACTUAL SETTINGS
 // WiFi
 const char* ssid = "ssid_here";
 const char* wifi_password = "wifi_password_here";
 
 // MQTT
-const char* mqtt_server = "192.168.0.152";  // IP of the MQTT broker (rasperry pi) local ip
+const char* mqtt_server = "server_ip_here";  // IP of the MQTT broker (rasperry pi) local ip
 const char* topic = "home/bedroom";
 const char* location = "bedroom";
 const char* mqtt_username = "mqtt_username_here";
