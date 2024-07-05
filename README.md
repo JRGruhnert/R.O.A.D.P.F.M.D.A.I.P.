@@ -13,8 +13,6 @@ Used Hardware and Software
 - InfluxDB
 - Jupiter Notebook
 - Mosquitto (MQTT)
-### Programming Languages
-- C++ (Arduino dialect)
-- Python
+
 ## Sequenzdiagramm
 ![image](/doc/images/UML_Sensor.png)
